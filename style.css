@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+   /* gap: 1px;*/
+   height: 100vh;
+   font-family: 'Roboto', sans-serif;
+}
+.img{
+    border: 1px solid grey;
+}
+
+/*HEADER STYLES*/
+header{
+    grid-column: 2/3;
+    
+    
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.topheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px  0 40px;
+}
+.bottomheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px  10px 40px;
+}
+.morgan{
+   /* margin-left: 20px;*/
+}
+.searchbar{
+    display: flex;
+    align-items: center;
+}
+.searchbar > img {
+    margin-right: 5px;
+}
+.active{
+    display: flex;
+    align-items: center;
+}
+.active > .activeimage > img{
+    border-radius: 60%;
+    height: 70px;
+    padding-right: 20px;
+}
+header .searchbar input{
+    max-width: 571px;
+    height: 25px;
+    width: 50vw;
+    border-radius: 15px;
+    background-color: rgba(226,232,240,255);
+    border: none;
+}
+header .searchbar input:active{
+    border: none;
+}
+.button{
+    display: flex;
+    align-items: center;
+}
+.button > button{
+    color: white;
+    background-color: #0ea5e9;
+    font-weight: 500;
+    width: 75px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    margin-right: 30px;
+}
+.button  .share {
+    margin-right: 20px;
+}
+.headerflex{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.headerflex > .item {
+    padding: 0 10px 0 10px;
+}
+.item > h3 {
+    margin: 0;
+    padding: 0;
+}
+.headerflex .profileimage img {
+    border-radius: 50%;
+    height: 50px;
+}
+/***********************/
+
+
+
+
+/*SIDEBAR STYLE*/
+.side-bar{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-color: #0ea5e9;
+
+
+    display: grid;
+    grid-template-rows: 0.02fr 0.3fr 0.4fr;
+    gap: 20px;
+}
+.dash{
+    display: flex;
+    margin-bottom: 10px;
+}
+.side-bar > div > h3 {
+    color: white;
+    font-size: x-large;
+    font-weight: bolder;
+    position: relative;
+    top: 25px;
+    left: 9px;
+}
+.side-bar > .dash > img {
+    margin-right: 20px;
+    margin-left: 10px;
+    position: relative;
+    top: 20px;
+    left: 15px;
+}
+.side-bar > div > ul > li{
+    list-style-type:  none;
+    color: white;
+    font-weight: bolder;
+    font-size: large;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.side-bar > div > ul > li > img{
+   margin-right: 20px;
+   position: relative;
+   top: 6px;
+}
+/*-----------*/
+
+
+
+
+
+/* MAIN STYLES*/
+main{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: rgba(226,232,240,255);
+    padding-top: 20px;
+}
+.cardsection{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns:repeat(2, minmax(210px, 0.46fr));
+}
+.card-section > h2{
+    margin-left: 40px;
+}
+
+.cardsection > div {
+    margin: 38px;
+    background-color: white;
+    padding: 30px 50px 10px 30px;
+    width: 250px;
+}
+.card{
+    border-radius: 10px;
+    border-left: 10px solid rgb(240, 205, 9);
+}
+.card .display .inline > li{
+    display: inline;
+    padding: 10px;
+}
+.card > span{
+    margin-top: 40px;
+    float: right;
+}
+.announcements{
+    margin-right: 20px;
+    margin-top: 22px;
+}
+.notice{
+    background-color: white;
+    padding: 30px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+.noticenotes{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.nowtrending{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.trending{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.trending > .topics > img{
+    border-radius: 50%;
+    height: 50px;
+}
+.topics{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.topics > div {
+    margin-left: 20px;
+}
